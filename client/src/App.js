@@ -2,7 +2,7 @@ import './App.css';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import LandingPage from "./components/LandingPage/LandingPage";
 import Home from './components/Home/Home';
-import PokemonCreate from "./components/PokemonCreate"
+import PokemonCreate from "./components/PokemonCreate/PokemonCreate"
 import PokemonDetail from "./components/PokemonDetail/PokemonDetail"
 
 function App() {

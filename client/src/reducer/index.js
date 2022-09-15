@@ -56,30 +56,30 @@ function rootReducer (state = initialState, action) {
             }
 
         case "ORDER_BY_NAME":
-            const orderAll = action.payload === "asc" ? 
-            state.pokemons.sort(function (a, b) {
-                if (a.name > b.name) {
-                    return 1;
+                const orderAll = action.payload === "asc" ? 
+                state.pokemons.sort(function (a, b) {
+                    if (a.name > b.name) {
+                        return 1;
+                    }
+                    if (b.name > a.name) {
+                        return -1;
+                    }
+                    return 0
+                }) :
+                state.pokemons.sort(function (a, b) {
+                    if (a.name > b.name) {
+                        return -1;
+                    }
+                    if (b.name > a.name) {
+                        return 1;
+                    }
+                    return 0
+                })
+                return {
+                    ...state,
+                    pokemons: orderAll
                 }
-                if (b.name > a.name) {
-                    return -1;
-                }
-                return 0
-            }) :
-            state.pokemons.sort(function (a, b) {
-                if (a.name > b.name) {
-                    return -1;
-                }
-                if (b.name > a.name) {
-                    return 1;
-                }
-                return 0
-            })
-            return {
-                ...state,
-                pokemons: orderAll
-            }
-
+                
         case "ORDER_BY_ATTACK":
         const orderAttack = action.payload === "asc" ? 
         state.pokemons.sort(function (a, b) {

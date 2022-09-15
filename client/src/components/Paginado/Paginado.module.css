@@ -1,0 +1,14 @@
+.boton {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    height: 2rem;
+    width: 3rem;
+    border: solid 2px #d1495b;
+    background-color: #fcd5ce;
+    cursor: pointer;
+    /* list-Style: none; */
+    /* place-content: center; */
+    border-radius: 10px;
+    font-size: large;
+
+}

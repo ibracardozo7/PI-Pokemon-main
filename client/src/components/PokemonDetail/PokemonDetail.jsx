@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { detailPokemon } from "../../actions";
 import {Link} from "react-router-dom"
 import style from "./PokemonDetail.module.css"
@@ -20,7 +20,7 @@ useEffect(() => {
 },[])
 
 return (
-    <div className={style.mainComponent}>
+    <div >
         <div className={style.containerNav}>
             <Link to="/home" >
                 <button className={style.boton}>Volver</button>
@@ -28,11 +28,12 @@ return (
         </div>
         {
             detail ?
-            <div className={style.main}>
+            <div className={style.containerMain} >
+            <div className={style.mainComponent}>
                 {/* <img className={style.imageBackOne} src={detail.image} /> */}
                 <div className={style.container}>
                     <h2 className={style.nameDetail} >{detail.name}</h2>
-                    <img className={style.image} src={detail.image} />
+                    <img className={style.image} src={detail.image} alt="Error" />
                     <div className={style.stat} >
                         <div className={style.label} >Types:</div>
                         <div className={style.losTipos}>
@@ -69,13 +70,13 @@ return (
                     </div>
                     
                 </div>
-
+            </div>
             </div>  
             
             :
             
             <div >
-                <img src={loading} />
+                <img src={loading} alt="Error" />
             </div>             
         }
     </div>

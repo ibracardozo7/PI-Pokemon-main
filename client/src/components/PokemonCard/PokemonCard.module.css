@@ -1,0 +1,47 @@
+.container {
+    border: solid 3px rgb(185, 58, 58);
+    background-color: #e7aca2c4;
+    height: 22rem;
+    width: 15.5rem;
+    margin: 2rem 2rem;
+    padding: 0.5rem;
+    border-radius: 15px;
+    overflow: hidden;
+    /* opacity: 0.9; */
+}
+
+.container:hover {
+    background-color: #58bb8dcc;
+    border: solid 5px #275f45 ;
+}
+
+.nameCard {
+    text-transform: capitalize;
+    color: brown;
+    font-size:xx-large;
+}
+
+.imagen {
+    height: 12rem;
+    width: 12rem;
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.type {
+    text-transform: capitalize;
+    /* height: 1.5rem; */
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 1rem 1rem 1.5rem 1rem;
+    border: solid 3px #1982c4;
+    background-color: #8fd8ee;
+    color: #1982c4;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 

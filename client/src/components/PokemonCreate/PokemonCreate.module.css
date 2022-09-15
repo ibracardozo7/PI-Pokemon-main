@@ -1,0 +1,140 @@
+.container {
+    background-image: url(../../img/21000.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 110vh;
+    background-attachment: fixed;
+}
+
+.title {
+    font-family: 'Monaco';
+    font-weight: bold;
+    margin: 0.5rem;
+    color: #b14453;
+ 
+}
+
+.pkmForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px black; */
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 2px rgb(224, 110, 110);
+    height: 3rem;
+    width: 35rem;
+    margin: 0.2rem;
+    border-radius: 15px;
+    background-color: rgb(238, 168, 168);
+}
+
+.label {
+    margin: 0.5rem 0 0 3rem;
+    width: 10rem;
+    height: 2rem;
+    text-align: left;
+    font-family: 'Monaco';
+    color: rgb(182, 43, 43);
+    font-weight: bold;
+}
+
+.input {
+    width: 10rem;
+    height: 1.5rem;
+    margin: 1rem;
+    font-family: 'Monaco';
+    font-size: large;
+    padding-inline: 1rem;
+    border-radius: 10px;
+    border: solid 2px rgb(224, 110, 110);
+}
+
+.inputTypes {
+    width: 10rem;
+    height: 2rem;
+    margin: 1rem;
+    font-family: 'Monaco';
+    font-size: large;
+    padding-inline: 1rem;
+    border-radius: 10px;
+    border: solid 2px rgb(224, 110, 110);
+}
+
+.button {
+    width: 12rem;
+    height: 3.5rem;
+    margin: 1rem 1rem;
+    font-family: 'Monaco';
+    font-size: x-large;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: rgb(253, 167, 167);
+    border: solid 2px rgb(224, 110, 110);
+}
+
+.theOthers {
+    height: 100%;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 10rem;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 1px red; */
+    
+}
+
+.labelSel {
+    /* margin: 0 0 0 0; */
+    width: 10rem;
+    height: 2rem;
+    text-align: center;
+    font-family: 'Monaco';
+    color: rgb(216, 104, 104);
+    font-weight: bold;
+    font-size: x-large;
+    letter-spacing: 2px;
+}
+
+.selectedTypes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.type {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #1982c4;
+    background-color: #8fd8ee;
+    color: #1982c4;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerDiv {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.placeholder {
+    text-transform: capitalize;
+    font-family: 'Monaco';
+    font-size: x-large;
+}

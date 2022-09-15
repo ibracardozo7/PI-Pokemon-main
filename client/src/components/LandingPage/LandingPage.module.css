@@ -1,25 +1,26 @@
 .container {
-    background-image: url(../../img/14711.jpg);
+    background-image: url(../../img/14711-pokemon.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    width: 80wh;
+    min-height: 100vh;
+    /* width: 80wh; */
 }
 .botton {
     width: 10rem;
     height: 5rem;
     /* margin: 1rem 1rem; */
     font-family: 'Courier New';
-    font-size: 35px;
+    font-size:xx-large;
     font-weight: 530;
     border-radius: 15px;
     cursor: pointer; 
     position: fixed;
     bottom: 6rem;
     right: 39rem;
-    background-color: rgba(218, 73, 73, 0.61);
+    background-color: rgba(219, 86, 86, 0.61);
     border: solid 5px rgb(71, 7, 7);
+    font-weight: bold;
 }
 
 
